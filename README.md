@@ -10,11 +10,12 @@ The work includes data cleaning, SQL database integration, and insights through 
 - **incident_analysis/** — analysis of school incident reports  
 - **school_directory_exploration/** — exploration of school directory data  
 - **database_queries/** — SQL queries executed via Python  
-- **database_population/** — cleaned SAT results and upload scripts for PostgreSQL  
+- **database_population/** — cleaned SAT results and upload scripts for PostgreSQL
+   
 
-- Each folder contains a `README.md` explaining the task, methodology, and results.  
-- Jupyter Notebooks document all code and visualizations for reproducibility.  
-- `database_population` contains cleaned CSV files and scripts to upload to PostgreSQL.
+ - Each folder contains a `README.md` explaining the task, methodology, and results.  
+ - Jupyter Notebooks document all code and visualizations for reproducibility.  
+ - `database_population` contains cleaned CSV files and scripts to upload to PostgreSQL.
 ---
 
 ## 🛠 Tech Stack
