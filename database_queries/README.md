@@ -3,11 +3,6 @@
 ## 📌 Overview
 This section contains SQL queries executed against the NYC Schools PostgreSQL database using Python.  
 
-## 📝 Example Queries
-- Count of schools by borough  
-- Average SAT score per borough  
-- Join between school directory, demographics, and SAT results  
-
 ## Summary
 - Successfully connected to the SQL database via Python using Pandas and SQLAlchemy.
 - Loaded the dataset for analysis in Jupyter Notebook.
