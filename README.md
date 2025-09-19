@@ -12,21 +12,27 @@ The work includes data cleaning, SQL database integration, and insights through 
 - **database_queries/** — SQL queries executed via Python  
 - **database_population/** — cleaned SAT results and upload scripts for PostgreSQL  
 
+- Each folder contains a `README.md` explaining the task, methodology, and results.  
+- Jupyter Notebooks document all code and visualizations for reproducibility.  
+- `database_population` contains cleaned CSV files and scripts to upload to PostgreSQL.
 ---
 
 ## 🛠 Tech Stack
-- Python (pandas, matplotlib, sqlalchemy, psycopg2)  
-- SQL (PostgreSQL)  
-- Jupyter Notebook / VS Code  
-- GitHub for version control  
+- **Python** – pandas, matplotlib, seaborn, numpy, SQLAlchemy, psycopg2  
+- **SQL** – PostgreSQL queries integrated via Python  
+- **Visualization** – matplotlib / seaborn in Jupyter Notebooks  
+- **Version Control** – Git & GitHub  
+- **IDE** – Jupyter Notebook / VS Code   
 
 ---
 
 ## 📊 Key Results
-- Data cleaning and standardization of NYC school datasets  
-- School distribution analysis across boroughs  
-- SAT results aggregation (Math, Reading, Writing, Total)  
-- SQL integration across multiple datasets via `dbn` key  
+- Cleaned and standardized NYC school datasets  
+- Analyzed school distribution and student enrollment by borough    
+- Integrated multiple datasets via `dbn` key  
+- Identified incident patterns and borough disparities  
+- SAT scores validated and ready for analysis   
+- Prepared datasets for SQL integration and future analytics  
 
 ---
 
