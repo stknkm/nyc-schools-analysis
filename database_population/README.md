@@ -3,14 +3,23 @@
 ## 📌 Overview
 This section describes the cleaning of SAT score data and loading into a PostgreSQL database.  
 
-## 🛠 Cleaning Steps
-- Standardized column names (lowercase, underscores, no special characters)  
-- Dropped unnecessary columns (`internal_school_id`, `contact_extension`)  
-- Converted numeric strings into proper numbers (`errors="coerce"`)  
-- Ensured SAT scores are within valid range (200–800)  
-- Added `sat_total_avg_score` column  
+## Cleaning Logic
+- Standardized column names (lowercase, underscores, removed special characters).
+- Dropped unnecessary columns (`sat_critical_readng_avg_score`, `internal_school_id`, `contact_extension`).
+- Converted numeric columns:
+  - `num_of_sat_test_takers` → Int64
+  - SAT score columns → Float
+- Set invalid SAT scores (<200 or >800) to NaN.
+- Converted `pct_students_tested` from strings with "%" to float, handling "N/A" as NaN.
+- Converted `academic_tier_rating` to Int64.
+- Added `sat_total_avg_score` as the sum of individual SAT score columns.
 
-## 🗄 SQL Schema
+## Challenges
+- Some columns contained non-numeric values like `"s"` or `"N/A"`.
+- Handling duplicates and typos in column names.
+- Ensuring correct data types for PostgreSQL integration.
+
+## SQL Schema / Integration Notes
 ```sql
 CREATE TABLE serhii_sotnichenko_sat_scores (
     dbn TEXT PRIMARY KEY,
