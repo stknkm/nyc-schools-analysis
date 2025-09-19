@@ -18,9 +18,9 @@ The work includes data cleaning, SQL database integration, and insights through 
 ---
 
 ## 🛠 Tech Stack
-- **Python** – pandas, matplotlib, seaborn, numpy, SQLAlchemy, psycopg2  
+- **Python** – pandas, matplotlib, SQLAlchemy, psycopg2  
 - **SQL** – PostgreSQL queries integrated via Python  
-- **Visualization** – matplotlib / seaborn in Jupyter Notebooks  
+- **Visualization** – matplotlib in Jupyter Notebooks  
 - **Version Control** – Git & GitHub  
 - **IDE** – Jupyter Notebook / VS Code   
 
